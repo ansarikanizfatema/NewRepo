@@ -1,0 +1,105 @@
+Basic Commands
+git init: Initializes a new Git repository.
+
+git clone [url]: Clones a repository from a URL to your local machine.
+
+git status: Shows the status of changes as untracked, modified, or staged.
+
+git add [file]: Adds a file to the staging area.
+
+git commit -m "message": Commits your staged changes with a message.
+
+git push: Pushes changes to the remote repository.
+
+git pull: Fetches and merges changes from the remote repository.
+
+Branching and Merging
+git branch: Lists all branches in your repository.
+
+git branch [branch-name]: Creates a new branch.
+
+git checkout [branch-name]: Switches to the specified branch.
+
+git merge [branch-name]: Merges the specified branch into the current branch.
+
+git branch -d [branch-name]: Deletes the specified branch.
+
+Undoing Changes
+git reset [file]: Removes the file from the staging area but keeps its changes.
+
+git reset --hard [commit]: Resets your repository to the specified commit, discarding all changes.
+
+git revert [commit]: Creates a new commit that undoes the changes made in the specified commit.
+
+Remote Repositories
+git remote -v: Lists the current remote connections.
+
+git remote add [name] [url]: Adds a new remote repository.
+
+git fetch [remote]: Fetches changes from the remote repository.
+
+git push [remote] [branch]: Pushes your branch to the remote repository.
+Viewing & Exploring the History
+git log: Shows the commit history.
+
+git log --oneline: Displays the commit history in a compact, one-line format.
+
+git diff [file]: Shows the difference between the working directory and the staging area.
+
+git diff --staged: Shows the difference between the staging area and the last commit.
+
+git show [commit]: Displays information about a specific commit.
+
+Working with Tags
+git tag [tag-name]: Creates a new tag.
+
+git tag: Lists all tags.
+
+git tag -d [tag-name]: Deletes the specified tag.
+
+git push [remote] [tag-name]: Pushes a tag to the remote repository.
+
+git push --tags: Pushes all tags to the remote repository.
+
+Stashing Changes
+git stash: Stashes your changes and cleans the working directory.
+
+git stash list: Lists all stashed changes.
+
+git stash apply: Applies the most recent stash.
+
+git stash pop: Applies the most recent stash and removes it from the stash list.
+
+git stash drop: Removes a specific stash from the list.
+
+Ignoring Files
+.gitignore: A file specifying intentionally untracked files to ignore.
+
+Configuration
+git config --global user.name "Your Name": Sets your user name for commits.
+
+git config --global user.email "you@example.com": Sets your email for commits.
+
+git config --list: Lists all the current configurations.
+
+Submodules
+git submodule add [url] [path]: Adds a new submodule.
+
+git submodule update --init: Initializes, fetches, and checks out the submodule.
+
+git submodule deinit -f [path]: Deinitializes the submodule.
+
+Rebasing
+git rebase [branch]: Reapplies commits on top of another base tip.
+
+git rebase --abort: Aborts the rebase process.
+
+git rebase --continue: Continues the rebase after resolving conflicts.
+
+Aliases
+git config --global alias.[alias-name] [command]: Creates a shortcut for a Git command.
+
+Clean Up
+git clean -f: Removes untracked files from the working directory.
+
+git clean -fd: Removes untracked files and directories from the working directory.
