@@ -1,0 +1,41 @@
+Basic Commands
+git init: Initializes a new Git repository.
+
+git clone [url]: Clones a repository from a URL to your local machine.
+
+git status: Shows the status of changes as untracked, modified, or staged.
+
+git add [file]: Adds a file to the staging area.
+
+git commit -m "message": Commits your staged changes with a message.
+
+git push: Pushes changes to the remote repository.
+
+git pull: Fetches and merges changes from the remote repository.
+
+Branching and Merging
+git branch: Lists all branches in your repository.
+
+git branch [branch-name]: Creates a new branch.
+
+git checkout [branch-name]: Switches to the specified branch.
+
+git merge [branch-name]: Merges the specified branch into the current branch.
+
+git branch -d [branch-name]: Deletes the specified branch.
+
+Undoing Changes
+git reset [file]: Removes the file from the staging area but keeps its changes.
+
+git reset --hard [commit]: Resets your repository to the specified commit, discarding all changes.
+
+git revert [commit]: Creates a new commit that undoes the changes made in the specified commit.
+
+Remote Repositories
+git remote -v: Lists the current remote connections.
+
+git remote add [name] [url]: Adds a new remote repository.
+
+git fetch [remote]: Fetches changes from the remote repository.
+
+git push [remote] [branch]: Pushes your branch to the remote repository.
